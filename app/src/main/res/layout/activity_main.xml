@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:paddingBottom="56dp"
+    android:paddingLeft="48dp"
+    android:paddingRight="48dp"
+    android:paddingTop="56dp"
+    android:weightSum="11">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Into Your Account"
+            android:textColor="#4f5168"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:background="@android:drawable/edit_text"
+                android:hint="info@w3layouts.com"
+                android:inputType="textEmailAddress" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/user" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_pass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edit_text_height"
+                android:background="@android:drawable/edit_text"
+                android:hint="password"
+                android:inputType="textPassword" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/pass" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_height"
+            android:layout_marginTop="24dp"
+            android:background="#7ab42c"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textColor="#fffff1" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-55dp"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:text="Remember me"
+                android:buttonTint="#dedede"
+                android:textColor="#c8c8ca"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="forget password?"
+                android:paddingTop="4dp"
+                android:textColor="#c8c8ca" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="0.1dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or" />
+
+        <TextView
+            android:layout_width="0.1dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="32dp"
+            android:layout_weight="1"
+            android:background="@android:color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have a account? Sign up!"
+            android:textColor="#96cdf4"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height"
+            android:layout_marginTop="@dimen/margin_top_view"
+            android:scaleType="fitXY"
+            android:src="@mipmap/facebook" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height"
+            android:layout_marginTop="@dimen/margin_top_view"
+            android:scaleType="fitXY"
+            android:src="@mipmap/twitter" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height"
+            android:layout_marginTop="@dimen/margin_top_view"
+            android:scaleType="fitXY"
+            android:src="@mipmap/google" />
+    </LinearLayout>
+</LinearLayout>
